@@ -1,15 +1,15 @@
-  @import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Courier+Prime:wght@700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Courier+Prime:wght@700&family=Roboto:wght@400;700&display=swap");
 
 body {
   min-width: 100vw;
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  background: #FBE6DB;
+  background: #fbe6db;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Courier Prime', monospace;
+  font-family: "Courier Prime", monospace;
 }
 
 .wrapper {
@@ -49,6 +49,7 @@ body {
   left: 0;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  user-select: none;
 }
 
 .credit-card--back {
@@ -56,35 +57,35 @@ body {
 }
 
 .visa .credit-card--front {
-  background-image: url('./images/cc__visa--front.png')
+  background-image: url("./images/cc__visa--front.png");
 }
 
 .visa .credit-card--back {
-  background-image: url('./images/cc__visa--back.png')
+  background-image: url("./images/cc__visa--back.png");
 }
 
 .mastercard .credit-card--front {
-  background-image: url('./images/cc__mastercard--front.png');
+  background-image: url("./images/cc__mastercard--front.png");
 }
 
 .mastercard .credit-card--back {
-  background-image: url('./images/cc__mastercard--back.png');
+  background-image: url("./images/cc__mastercard--back.png");
 }
 
 .discover .credit-card--front {
-  background-image: url('./images/cc__discover--front.png');
+  background-image: url("./images/cc__discover--front.png");
 }
 
 .discover .credit-card--back {
-  background-image: url('./images/cc__discover--back.png');
+  background-image: url("./images/cc__discover--back.png");
 }
 
 .american .credit-card--front {
-  background-image: url('./images/cc__american--front.png');
+  background-image: url("./images/cc__american--front.png");
 }
 
 .american .credit-card--back {
-  background-image: url('./images/cc__american--back.png');
+  background-image: url("./images/cc__american--back.png");
 }
 
 .card-number {
@@ -116,7 +117,7 @@ body {
   line-height: 34px;
   text-transform: uppercase;
   left: 355px;
-  top: 246px;;
+  top: 246px;
 }
 
 .shadow {
@@ -131,7 +132,14 @@ body {
 .emboss {
   z-index: 5;
   position: absolute;
-  background: linear-gradient(180deg, #FFFFFF 15.34%, #DBDBDB 21.24%, #FFFFFF 37.13%, rgba(188, 203, 217, 0.68) 48.94%, rgba(255, 255, 255, 0.830204) 58.93%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 15.34%,
+    #dbdbdb 21.24%,
+    #ffffff 37.13%,
+    rgba(188, 203, 217, 0.68) 48.94%,
+    rgba(255, 255, 255, 0.830204) 58.93%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 5;
@@ -140,7 +148,7 @@ body {
 }
 
 .signature {
-  font-family: 'Beth Ellen', cursive;
+  font-family: "Beth Ellen", cursive;
   font-size: 32px;
   position: absolute;
   left: 105px;
@@ -157,7 +165,7 @@ body {
   background: white;
   border-radius: 30px;
   padding: 200px 60px 60px 60px;
-  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.25), 0px 0px 95px #F5C7BD;
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.25), 0px 0px 95px #f5c7bd;
   position: relative;
   z-index: 1;
   width: 890px;
@@ -176,7 +184,7 @@ body {
 }
 
 label {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: normal;
@@ -184,11 +192,11 @@ label {
   margin-bottom: 8px;
 }
 
-input[type=text],
-input[type=number],
+input[type="text"],
+input[type="number"],
 select {
-  font-family: 'Roboto', sans-serif;
-  border: 2px solid #E0E0E0;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #e0e0e0;
   border-radius: 4px;
   height: 65px;
   padding: 0 30px;
@@ -199,9 +207,9 @@ select {
 }
 
 button {
-  background: #7D193E;
+  background: #7d193e;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -214,7 +222,6 @@ button {
   cursor: pointer;
 }
 
-
 .field__option {
   display: flex;
   gap: 20px;
@@ -225,6 +232,10 @@ button {
 }
 
 select {
-  background: url('./images/arrow.svg') 95% center no-repeat;
+  background: url("./images/arrow.svg") 95% center no-repeat;
   appearance: none;
+}
+
+input.error {
+  border-color: #ff0000;
 }
